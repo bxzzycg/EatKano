@@ -641,8 +641,8 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
     }
 
     w.saveClickBeforeImage = function() {
-        const img = document.getElementById('click-before-image');
-        saveImage(img, r => {
+        const png = document.getElementById('click-before-image');
+        saveImage(png, r => {
             clickBeforeStyle.html(`
                 .t1, .t2, .t3, .t4, .t5 {
                    background-size: auto 100%;
@@ -656,8 +656,8 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
     }
 
     w.saveClickAfterImage = function() {
-        const img = document.getElementById('click-after-image');
-        saveImage(img, r => {
+        const png = document.getElementById('click-after-image');
+        saveImage(png, r => {
             clickAfterStyle.html(`
                 .tt1, .tt2, .tt3, .tt4, .tt5 {
                   background-size: auto 86%;
